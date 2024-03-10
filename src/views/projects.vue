@@ -85,7 +85,7 @@
 }
 .proj{
   position: absolute;
-  left :0;
+  left :20px;
 }
 </style>
 <script setup lang="ts">

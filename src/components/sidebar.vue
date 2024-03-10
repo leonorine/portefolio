@@ -1,10 +1,7 @@
 <template>
   <section :class="['sidebar',{'sidebar--open':open}]">
     <div id ="close" @click="onCroixClick">
-      <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <line x1="20" y1="20" x2="30" y2="30" stroke="black" stroke-width="2" />
-      <line x1="30" y1="20" x2="20" y2="30" stroke="black" stroke-width="2" />
-    </svg>
+      <img src="../../public/croix.png" alt="">
     </div>
 
     <div id = "choix">
@@ -24,7 +21,7 @@
   position: absolute;
   top:64px;
   left: -200px;
-  background-color: #2a303f;
+  background-color: #231a15;
   width: 160px;
   height: 100%;
   z-index: 1;
@@ -40,14 +37,21 @@
 }
 #close{
   position: absolute;
-  right: -60px;
-  top: -10px;
+  right: 0;
+  top: 0;
   cursor: pointer;
 
   &:hover {
-    svg {
-      zoom: 1.5;
+    img {
+      height: 35px;
+      transition:
+          height 0.1s
     }
+  }
+  img{
+    height: 30px;
+    transition:
+        height 0.1s
   }
 }
 
@@ -55,18 +59,16 @@
   position: absolute;
   top: 20px;
   left: -30px;
+
 }
 
 #choix li{
-  display:flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
+
   text-decoration: none;
 
-  &:hover {
+  /*&:hover {
     background-color: rgba(0, 0, 0, 0.3);
-  }
+  }*/
 
   a {
     text-decoration: none;
@@ -85,6 +87,10 @@
 
 #choix ul{
   list-style-type: none;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
 }
 
 </style>

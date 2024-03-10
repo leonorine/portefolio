@@ -1,7 +1,7 @@
 <template>
   <section class="bandeau">
     <button @click="onMenuClick" >
-      <font-awesome-icon icon="faHouse" style="--fa-primary-color: #000000; --fa-secondary-color: #b39031; --fa-secondary-opacity: 0.6;" />
+      <img src="../../public/menu.png" alt="">
       Menu
     </button>
     <div class = "milieu">
@@ -48,7 +48,7 @@
     background-color: #B39031;
   }
   #contact a:hover{
-    border: solid 2px black;
+    border: solid 2px #130e05;
   }
 
   .milieu img{
@@ -73,7 +73,8 @@
   }
 
   button img{
-    height: 50px;
+    height: 15px;
+    margin: 0 3px ;
   }
   button:hover{
     text-decoration: underline;
