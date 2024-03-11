@@ -1,6 +1,7 @@
 <template>
-  <section class = "pro-section">
+  <section class = "section">
     <h1 class = "titre">Mon parcours professionnel</h1>
+    <section class = "pro-section">
     <div class = "pro">
       <div>
         <h4 class = "titreXP"> Téléconseillère ARBS</h4>
@@ -23,6 +24,7 @@
     </div>
 
   </section>
+  </section>
 
 </template>
 
@@ -40,15 +42,20 @@
   border : 1px solid #fff7e3;
   margin : 30px 8%;
   padding: 10px;
-  display: flex;
-  align-items: center;
-  height: 200px;
-  width: 450px;
+  min-height: 100px;
+  min-width: 450px;
 }
 
-pro p{
+.pro-section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.description{
   color: #fff7e3;
   text-align: center;
+  margin: 5px 25px;
 }
 
 .pro h4{

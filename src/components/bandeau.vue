@@ -37,6 +37,7 @@
 
   #contact{
     margin-right: 2%;
+    min-width: 116px;
   }
 
   #contact a{
@@ -46,6 +47,7 @@
     padding: 10px;
     border-radius: 25px;
     background-color: #B39031;
+
   }
   #contact a:hover{
     border: solid 2px #130e05;
@@ -70,6 +72,7 @@
     display: flex;
     align-items: center;
     margin-left: 5px;
+    margin-right: 10%;
   }
 
   button img{

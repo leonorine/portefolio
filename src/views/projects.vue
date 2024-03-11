@@ -61,12 +61,11 @@
   border : 1px solid #fff7e3;
   margin : 10px 3%;
   padding: 10px;
-  display: inline-grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  width: 570px;
-  height: 325px;
+  min-width: 570px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 
 }
 
@@ -86,6 +85,10 @@
 .proj{
   position: absolute;
   left :20px;
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+
 }
 </style>
 <script setup lang="ts">
