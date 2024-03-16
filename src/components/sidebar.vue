@@ -36,7 +36,7 @@
         top 0.6s
   }
 }
-#close{
+.sidebar #close{
   position: absolute;
   right: 0;
   top: 0;
@@ -56,14 +56,14 @@
   }
 }
 
-#choix{
+.sidebar #choix{
   position: absolute;
   top: 20px;
   left: -45px;
 
 }
 
-#choix li{
+.sidebar #choix li{
 
   text-decoration: none;
 
@@ -82,17 +82,50 @@
   }
 }
 
-#choix li:hover{
+.sidebar #choix li:hover{
   text-decoration: underline;
 }
 
-#choix ul{
+.sidebar #choix ul{
   list-style-type: none;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
   row-gap: 3px;
 
+}
+ul {
+  --col-gap: 2rem;
+  --row-gap: 2rem;
+  --line-w: 0.25rem;
+  display: grid;
+  grid-template-columns: var(--line-w) 1fr;
+  grid-auto-columns: max-content;
+  column-gap: var(--col-gap);
+  list-style: none;
+  width: min(60rem, 90%);
+  margin-inline: auto;
+}
+
+
+ul li {
+  grid-column: 2;
+  --inlineP: 1.5rem;
+  margin-inline: var(--inlineP);
+  grid-row: span 2;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+}
+
+ul li:not(:last-child) {
+  margin-bottom: var(--row-gap);
+}
+ul::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 1 / span 20;
+  background: rgb(225, 225, 225);
+  border-radius: calc(var(--line-w) / 2);
 }
 
 </style>

@@ -21,7 +21,7 @@
   text-align: center;
   font-size: 60px;
   margin: 70px 20%;
-  font-family: "Snell Roundhand";
+  font-family: "Snell Roundhand",serif;
   padding-bottom: 30px;
   border-bottom: #B39031 5px solid;
   color: white;

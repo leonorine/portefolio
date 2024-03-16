@@ -1,6 +1,6 @@
 <template>
-  <h1 class = "titre"> Projets </h1>
-  <h3 class = "titre">Ceux qui m'ont le plus marqués ...</h3>
+  <h1 class = "ptitre"> Projets </h1>
+  <h3 class = "ptitre">Ceux qui m'ont le plus marqués ...</h3>
 
   <section class = "proj">
   <div>
@@ -85,8 +85,8 @@
   text-align: center;
 }
 
-.titre{
-  margin: 0;
+.ptitre{
+  margin: 0 0 0 15px;
   color: white;
   font-weight: bold;
   font-size: 20px;

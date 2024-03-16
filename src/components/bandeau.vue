@@ -26,7 +26,7 @@
   .bandeau{
     background-color: #ffffff;
     box-sizing: border-box;
-    width: 100%;
+    min-width: 100%;
     height: 64px;
     position: relative;
     display: flex;
@@ -35,12 +35,12 @@
     color:#130e05;
   }
 
-  #contact{
+  .bandeau #contact{
     margin-right: 2%;
     min-width: 116px;
   }
 
-  #contact a{
+  .bandeau #contact a{
     text-decoration: none;
     color: white;
     border: solid 2px #B39031;
@@ -49,22 +49,22 @@
     background-color: #B39031;
 
   }
-  #contact a:hover{
+  .bandeau #contact a:hover{
     border: solid 2px #130e05;
   }
 
-  .milieu img{
+  .bandeau .milieu img{
     height: 64px;
 
   }
 
-  .milieu{
+  .bandeau .milieu{
     display: flex;
     align-items: center;
 
   }
 
-  button{
+  .bandeau button{
     text-align: center;
     border: none;
     background-color: white;
@@ -75,11 +75,11 @@
     margin-right: 10%;
   }
 
-  button img{
+  .bandeau button img{
     height: 15px;
     margin: 0 3px ;
   }
-  button:hover{
+  .bandeau button:hover{
     text-decoration: underline;
   }
 </style>

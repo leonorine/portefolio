@@ -29,7 +29,7 @@
 </template>
 
 <style>
-.date{
+.section .date{
   color: #FF9F1C;
   text-align: center;
   margin : 0;
@@ -38,7 +38,7 @@
   font-weight: lighter;
 }
 
-.pro{
+.section .pro{
   border : 1px solid #fff7e3;
   margin : 30px 8%;
   padding: 10px;
@@ -47,23 +47,23 @@
   font-family: "Poppins", sans-serif;
 }
 
-.pro-section{
+.section .pro-section{
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.description{
+.section .description{
   color: #fff7e3;
   text-align: center;
   margin: 5px 25px;
 }
 
-.pro h4{
+.section .pro h4{
   text-align: center;
 }
 
-.titre{
+.section .titre{
   margin-left: 15px;
   color: white;
   font-size: 20px;
@@ -72,7 +72,7 @@
 
 
 
-.titreXP{
+.section .titreXP{
   margin-bottom: 3px;
 }
 

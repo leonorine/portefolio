@@ -1,6 +1,7 @@
 <template>
-  <section class = "post">
   <h1 class = "titre">Mon parcours post bac</h1>
+  <section class = "post">
+
   <ul>
     <li style="--accent-color:#582F0E">
       <div class="date">2021</div>
@@ -37,6 +38,7 @@
   color: white;
   font-weight: bold;
   font-size: 19px;
+  margin-bottom: 25px;
 
 }
 
@@ -53,7 +55,7 @@
 
 }
 
-h1 {
+.post h1 {
   color: rgba(245, 245, 245);
   text-align: left;
 
