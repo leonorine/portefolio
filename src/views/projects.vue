@@ -60,23 +60,32 @@
   margin-top: 10px;
 
 }
-@media screen and (max-width: 625px){
+@media screen and (min-width: 601px) {
+  .projets{
+    min-width: 570px;
+    min-height: 400px;
+    max-width: 710px;
+  }
+
+}
+
+@media screen and (max-width: 600px){
   .projets{
     margin : 0;
     padding: 0;
+    width: 80%;
   }
   .proj{
-    width: 510px;
-    left :0;
-    margin : 0;
+    width: 90%;
+    margin-left : 5%;
     padding: 0;
     p{
       font-size: 13px;
     }
   }
   .projets img{
-    width: 280px;
-    height: 200px;
+    width: 250px;
+    height: 160px;
     margin-top: 5px;
 
   }
@@ -88,9 +97,6 @@
   border : 1px solid #fff7e3;
   margin : 10px 3%;
   padding: 10px;
-  min-width: 570px;
-  min-height: 400px;
-  max-width: 710px;
   display: flex;
   align-items: center;
   flex-direction: column;

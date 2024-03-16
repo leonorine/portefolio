@@ -29,7 +29,35 @@
 </template>
 
 <style>
+@media screen and (min-width: 601px) {
+  .pro{
+    min-height: 100px;
+    min-width: 450px;
+  }
+  .section .titre{
+    margin-left: 15px;
+  }
 
+}
+@media screen and (max-width: 600px){
+  .pro{
+    margin : 0;
+    padding: 0;
+    width: 80%;
+  }
+  .section{
+    width: 90%;
+    padding: 0;
+    p{
+      font-size: 13px;
+    }
+  }
+  .section .titre{
+    margin-left: 10px ;
+  }
+
+
+}
 .section .date{
   color: #FF9F1C;
   text-align: center;
@@ -43,8 +71,7 @@
   border : 1px solid #fff7e3;
   margin : 30px 8%;
   padding: 10px;
-  min-height: 100px;
-  min-width: 450px;
+
   font-family: "Poppins", sans-serif;
 }
 
@@ -65,7 +92,7 @@
 }
 
 .section .titre{
-  margin-left: 15px;
+
   color: white;
   font-size: 20px;
   font-weight: bolder;
