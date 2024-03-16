@@ -30,6 +30,7 @@
   button p{
     display: none;
   }
+
 }
   .bandeau{
     background-color: #ffffff;

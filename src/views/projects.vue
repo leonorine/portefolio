@@ -60,7 +60,28 @@
   margin-top: 10px;
 
 }
+@media screen and (max-width: 625px){
+  .projets{
+    margin : 0;
+    padding: 0;
+  }
+  .proj{
+    width: 510px;
+    left :0;
+    margin : 0;
+    padding: 0;
+    p{
+      font-size: 13px;
+    }
+  }
+  .projets img{
+    width: 280px;
+    height: 200px;
+    margin-top: 5px;
 
+  }
+
+}
 
 
 .projets{
@@ -68,7 +89,7 @@
   margin : 10px 3%;
   padding: 10px;
   min-width: 570px;
-  height: 400px;
+  min-height: 400px;
   max-width: 710px;
   display: flex;
   align-items: center;
