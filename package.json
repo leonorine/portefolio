@@ -9,12 +9,15 @@
     "serve:dist:dev": "pnpx browser-sync ./dist --single --no-notify --no-ui",
     "build": "pnpm run build:dev",
     "build:dev": "vite build --base='./' --sourcemap",
-    "build:prod": "vite build --base='/src/'",
+    "build:prod": "vite build --base='./'",
     "version": "bash scripts/version.sh"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
+    "cypress": "^13.7.0",
     "esbuild": "^0.20.2",
+    "pinia": "^2.1.7",
+    "vitest": "^1.4.0",
     "vue": "^3.2.26",
     "vue-router": "^4.0.0-beta.13"
   },
@@ -22,6 +25,7 @@
     "@tsconfig/node20": "^20.1.2",
     "@vue/compiler-sfc": "npm:@vue/compiler-sfc@^3",
     "browser-sync": "^3.0.2",
+    "eslint": "6.0.0",
     "sass": "^1.72.0",
     "tsconfig-paths": "^4.2.0",
     "vite": "^5.1.6"

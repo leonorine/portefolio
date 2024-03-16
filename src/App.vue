@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import Sidebar from "@/components/sidebar.vue";
 import {ref} from "vue";
 import Bandeau from "@/components/bandeau.vue";
+import HomeView from "@/views/HomeView.vue";
 const sidebarOpen = ref(false);
 function toggleSidebar (){
   sidebarOpen.value = !sidebarOpen.value

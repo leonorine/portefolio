@@ -11,8 +11,12 @@
       "path": "./tsconfig.vitest.json"
     }
   ],
+  "include": ["./src/**/*"],
   "compilerOptions": {
-    "module": "NodeNext",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "@/*": ["./*"]
+    }
 
   }
 }
