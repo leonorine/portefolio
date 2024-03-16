@@ -44,6 +44,7 @@
   padding: 10px;
   min-height: 100px;
   min-width: 450px;
+  font-family: "Poppins", sans-serif;
 }
 
 .pro-section{
@@ -65,7 +66,11 @@
 .titre{
   margin-left: 15px;
   color: white;
+  font-size: 20px;
+  font-weight: bolder;
 }
+
+
 
 .titreXP{
   margin-bottom: 3px;

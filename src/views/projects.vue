@@ -1,8 +1,10 @@
 <template>
+  <h1 class = "titre"> Projets </h1>
+  <h3 class = "titre">Ceux qui m'ont le plus marqués ...</h3>
+
   <section class = "proj">
   <div>
-    <h1 class = "titre"> Projets </h1>
-    <h3 class = "titre">Ceux qui m'ont le plus marqués ...</h3>
+    <div class = "double">
     <div class = "projets">
       <div>
         <h4 class = "titreProjet">Mon premier projet</h4>
@@ -24,7 +26,9 @@
       </div>
       <img src="../../public/ProjetIHM.jpeg" alt="Image maquette">
     </div>
-
+  </div>
+  </div>
+    <div class = "double">
     <div class = "projets">
       <div>
         <h4 class = "titreProjet">Projet "Find your restaurant"</h4>
@@ -45,7 +49,7 @@
       </div>
       <img src="../../public/Projet1JSFS.jpeg" alt="Site encheres">
     </div>
-  </div>
+    </div>
   </section>
 </template>
 
@@ -57,15 +61,18 @@
 
 }
 
+
+
 .projets{
   border : 1px solid #fff7e3;
   margin : 10px 3%;
   padding: 10px;
   min-width: 570px;
-  min-height: 200px;
+  height: 400px;
+  max-width: 710px;
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 
 }
 
@@ -79,15 +86,22 @@
 }
 
 .titre{
-  margin-left: 15px;
+  margin: 0;
   color: white;
+  font-weight: bold;
+  font-size: 20px;
+
 }
 .proj{
+  font-family: "Poppins", sans-serif;
   position: absolute;
   left :20px;
   display: flex;
   align-items:center;
   justify-content: space-around;
+  z-index: -1;
+  flex-direction: row;
+  flex-wrap: wrap;
 
 }
 </style>

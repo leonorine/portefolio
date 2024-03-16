@@ -19,20 +19,21 @@
 .sidebar{
   color:white;
   position: absolute;
-  top:64px;
-  left: -200px;
+  top:-450px;
+  left: 0px;
   background-color: #231a15;
   width: 160px;
-  height: 100%;
-  z-index: 1;
-  transition:left 0.3s;
+  height: 330px;
+  transition:top 0.4s;
+  border-bottom-right-radius: 15%;
+
 
 
 
   &--open{
-    left: 0;
+    top: 64px;
     transition:
-        left 0.5s
+        top 0.6s
   }
 }
 #close{
@@ -58,7 +59,7 @@
 #choix{
   position: absolute;
   top: 20px;
-  left: -30px;
+  left: -45px;
 
 }
 
@@ -90,7 +91,8 @@
   display:flex;
   flex-direction: column;
   justify-content: space-between;
-  row-gap: 20px;
+  row-gap: 3px;
+
 }
 
 </style>

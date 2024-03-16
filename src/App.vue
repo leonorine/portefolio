@@ -13,8 +13,8 @@ function toggleSidebar (){
 </script>
 
 <template>
-  <bandeau @on-menu-click="toggleSidebar"/>
-  <sidebar :open="sidebarOpen" @on-croix-click="toggleSidebar"/>
+  <bandeau @on-menu-click="toggleSidebar" id = "bandeau"/>
+  <sidebar :open="sidebarOpen" @on-croix-click="toggleSidebar" id = "sidebar"/>
 
 
 
@@ -31,5 +31,14 @@ function toggleSidebar (){
 </template>
 
 <style scoped>
+#bandeau{
+  z-index:2;
+}
+#sidebar{
+  z-index:1;
+}
+
+
+
 
 </style>
