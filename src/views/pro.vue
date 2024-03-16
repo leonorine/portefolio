@@ -29,6 +29,7 @@
 </template>
 
 <style>
+
 .section .date{
   color: #FF9F1C;
   text-align: center;

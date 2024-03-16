@@ -2,7 +2,7 @@
   <section class="bandeau">
     <button @click="onMenuClick" >
       <img src="../../public/menu.png" alt="">
-      Menu
+      <p>Menu</p>
     </button>
     <div class = "milieu">
       <h2>Portefolio</h2>
@@ -23,6 +23,14 @@
  }
 </script>
 <style>
+@media screen and (max-width: 625px){
+  .milieu h2{
+    display: none;
+  }
+  button p{
+    display: none;
+  }
+}
   .bandeau{
     background-color: #ffffff;
     box-sizing: border-box;
