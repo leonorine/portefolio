@@ -29,6 +29,15 @@
   </div>
   </div>
     <div class = "double">
+      <div class = "projets">
+        <div>
+          <h4 class = "titreProjet">Projet enchères</h4>
+          <p class = "description">
+            Fait dans le cadre de l'option Javascript Full Stack, ce site est une vente aux enchères entre plusieurs onglets ouverts. Ce projet m'a fait apercevoir le web d'une nouvelle façon, cela a été un projet très enrichissant à faire.
+          </p>
+        </div>
+        <img src="../../public/Projet1JSFS.jpeg" alt="Site encheres">
+      </div>
     <div class = "projets">
       <div>
         <h4 class = "titreProjet">Projet "Find your restaurant"</h4>
@@ -40,15 +49,7 @@
       <img src="../../public/ProjetResto.jpeg" alt="Site restaurants">
     </div>
 
-    <div class = "projets">
-      <div>
-        <h4 class = "titreProjet">Projet enchères</h4>
-        <p class = "description">
-          Fait dans le cadre de l'option Javascript Full Stack, ce site est une vente aux enchères entre plusieurs onglets ouverts. Ce projet m'a fait apercevoir le web d'une nouvelle façon, cela a été un projet très enrichissant à faire.
-        </p>
-      </div>
-      <img src="../../public/Projet1JSFS.jpeg" alt="Site encheres">
-    </div>
+
     </div>
   </section>
 </template>
@@ -100,7 +101,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-
+  justify-content: space-around;
+  gap: 10px;
 }
 
 .projets p{
@@ -129,6 +131,7 @@
   z-index: -1;
   flex-direction: row;
   flex-wrap: wrap;
+
 
 }
 </style>

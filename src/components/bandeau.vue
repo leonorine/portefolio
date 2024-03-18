@@ -6,7 +6,8 @@
     </button>
     <div class = "milieu">
       <h2>Portefolio</h2>
-      <img src="../../public/logo.png" alt="logo">
+      <RouterLink to="/"><img src="../../public/logo.png" alt="logo"></RouterLink>
+
       <h2>Léonorine Tibere</h2>
     </div>
 
@@ -16,11 +17,11 @@
   </section>
 </template>
 <script lang="ts" setup>
- import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
  const emit = defineEmits(["on-menu-click"]);
  function onMenuClick (){
    emit("on-menu-click");
  }
+
 </script>
 <style>
 @media screen and (max-width: 625px){
